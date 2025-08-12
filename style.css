@@ -59,7 +59,6 @@ main {
     font-size: 12px;
     font-weight: 500;
     transition: background-color 0.2s ease;
-    margin: 0 0 8px;
 }
 
 .media-btn:hover {
@@ -89,6 +88,14 @@ main {
     flex-direction: column;
 }
 
+.panel-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding-right: 40px;
+}
+
 header {
     display: flex;
     justify-content: space-between;
@@ -109,8 +116,8 @@ header h2 {
     align-items: flex-end;  
     cursor: pointer;
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 5px;
+    right: 20px;
 }
 
 .file-icon span {
@@ -214,7 +221,7 @@ header h2 {
 }
 
 .year {
-  font-size: 0.8rem; /* smallest */
+  font-size: 0.65rem; /* smallest */
   color: black;
 }
 
@@ -222,4 +229,3 @@ header h2 {
     font-size: 14px;
     color: black;
 }
-
