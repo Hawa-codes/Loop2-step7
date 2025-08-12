@@ -18,7 +18,7 @@ main {
     display: flex;
     align-items: center;
     width: 900px;
-    height: 520px;
+    height: 500px;
     border-radius: 3px;
     margin: 0;
     padding: 0px;
@@ -31,28 +31,55 @@ main {
     height: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background-size: cover;
     background-position: center;
+    text-align: left;
+}
+
+.left-content {
+    width: 70%;          
+    max-width: 360px;    
+    text-align: left;   
+}
+
+.media-btn { 
+    display: inline-flex;
+    align-items: center;
+    background-color: rgba(0, 128, 0, 0.5);
+    color: #fff;
+    padding: 6px 14px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 500;
+    transition: background-color 0.2s ease;
+}
+
+.media-btn:hover {
+    background-color: rgb(0, 128, 0);
 }
 
 .left-panel h1 {
     color: #fff;
     font-size: 20px;
     font-weight: bold;
-    margin-bottom: 20px;
+    margin: 0 0 8px;
 }
 
 .left-panel p {
     color: #fff;
     font-size: 14px;
-    margin-bottom: 20px;
+    margin: 0 0 14px;
 }
 
 .right-panel {
+    position: relative;
     width: 55%;
     height: 100%;
     background-color: #fff;
-    padding: 35px;
+    padding: 27px;
     display: flex;
     flex-direction: column;
 }
@@ -61,6 +88,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-left: 20px;
 }
 
 header h2 {
@@ -70,24 +98,37 @@ header h2 {
 }
 
 .file-icon {
-    width: 24px;
-    height: 24px;
-    margin-right: 8px;
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-end;  
+    position: absolute;     
+    top: 35px;               
+    right: 45px;             
+    cursor: pointer;
+}
+
+.file-icon span {
+    display: block;
+    width: 14px;
+    height: 2px;
+    background-color: black;
+    margin: 1px 0; /* space between lines */
 }
 
 .years {
     color: #fff;
-    font-size: 16px;
+    font-size: 15px;
     margin-top: 10px;
     display: flex;
     align-items: center;
     flex-direction: row;
     font-size: 18px;
-    gap: 18px;
+    gap: 15px;
     margin-bottom: 20px;
     margin-top: 20px;
     overflow-x: visible;
     cursor: pointer;
+    padding-left: 20px;
 }
 
 .year1 {
@@ -103,24 +144,42 @@ header h2 {
 }
 
 .articles {
+    position: relative;
     display: flex;
     flex-direction: column;
-    gap: 32px;
+    gap: 3px;
 }
 
 .article {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
-    gap: 12px;
+    gap: 10px;
+    padding: 18px;
+    margin: 0;
+}
+
+.article p {
+    font-weight: 100;
+    font-size: 7px;
+}
+
+.article-left {
+    display: flex;
+    flex-direction: row;
+    gap: 3px;
+}
+
+.article-left > p {
+    position: relative;
+    top: 6px;
 }
 
 .avatar {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  overflow: hidden;
   margin-right: 12px;
 }
 
@@ -130,35 +189,30 @@ header h2 {
 }
 
 .day {
-  font-size: 24px; /* big number */
-  font-weight: bold;
-  margin-right: 8px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 31px;
+    font-weight: 100;
+    color: black;
+    margin-right: 8px;
 }
 
 .month-year {
   display: flex;
   flex-direction: column;
-  line-height: 1;
 }
 
 .month {
-  font-size: 0.9rem; /* smaller */
-  font-weight: bold;
+  font-size: 0.8rem; /* smaller */
+  font-weight: 500;
 }
 
 .year {
   font-size: 0.8rem; /* smallest */
-  color: gray;
+  color: black;
 }
-
 
 .article p {
     font-size: 14px;
     color: black;
 }
 
-.day {
-    font-size: 24px;
-    font-weight: 100;
-    color: black;
-}
